@@ -1,6 +1,6 @@
 <?php
 // El autor es: Náyeli <nayeligomezmoyano@gmail.com>
-// El nombre por defecto es mundo
-$nombre = isset($rgv[1]) ? $argv[1] : "Mundo";
-@print "Hola {$argv[1]}\n"; // el @ es para que no tire errores en la web
+print "Introduce tu nombre";
+$nombre = trim(fgets(STDIN));
+print "Hola {$nombre}\n";
 ?>
